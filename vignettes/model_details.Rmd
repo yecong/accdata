@@ -1,0 +1,48 @@
+---
+title: "Analyzing Yearly State Accidents Data"
+author: "Yidan Cong"
+date: "2018-08-26"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+This vignette provides usage details of the package AccData, which contains 
+functions that access and extract information of accidents that have happened
+in specific years.
+In order for functions to work properly, please make sure that your data files
+are in the same directory as `fars_function.R`.
+
+`fars_read(filename)` takes in the filename of a csv file and returns a data 
+frame containing the data object in the file. The function will terminate if 
+the file defined by the `filename` does not exsit.
+
+```{r}
+fars_read("accident_2015.csv")
+```
+
+`make_filename(year)` is a helper function used in multiple functions in this package that returns a string of the filename defined by a specific year.
+
+```{r}
+make_filename("2014")
+```
+
+`fars_read_years(years)` returns a list of the MONTH and year column of accident
+datasets.
+
+`fars_summarize_years(years)` takes the list of MONTH and year columns returned by
+the previous function and summarizes the number of accidents in each month and year.
+
+`fars_map_state(state.num, year)` takes a state identification number `state.num` 
+and a given year and returns a scatter plot of locations of accidents in that state. The x and y axes of the plot is defined by longitude and latitude of the 
+location.
+

@@ -26,15 +26,10 @@ are in the same directory as `fars_function.R`.
 frame containing the data object in the file. The function will terminate if 
 the file defined by the `filename` does not exsit.
 
-```{r}
-fars_read("accident_2015.csv")
-```
+
 
 `make_filename(year)` is a helper function used in multiple functions in this package that returns a string of the filename defined by a specific year.
 
-```{r}
-make_filename("2014")
-```
 
 `fars_read_years(years)` returns a list of the MONTH and year column of accident
 datasets.

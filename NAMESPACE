@@ -8,3 +8,4 @@ importFrom("dplyr","tbl_df","mutate","select","bind_rows","group_by","summarize"
            "filter")
 importFrom("tidyr","spread")
 importFrom("graphics","points")
+importFrom("testthat","expect_that")

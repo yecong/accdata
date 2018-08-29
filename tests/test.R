@@ -1,5 +1,6 @@
 Sys.setenv("R_TESTS" = "")
 
+library(testthat)
 #source("R/fars_function.R")
 
 expect_that(fars_read("accident_1994.csv.bz2"),

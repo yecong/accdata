@@ -1,6 +1,6 @@
 Sys.setenv("R_TESTS" = "")
-
-#source("R/fars_function.R")
+library(testthat)
+source("/Users/yidancong/Desktop/AccData/R/fars_functions.R")
 
 expect_that(fars_read("accident_1994.csv.bz2"),
             throws_error("file 'accident_1994.csv.bz2' does not exist"))

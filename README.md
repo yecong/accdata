@@ -13,4 +13,4 @@ fars_read_years({"2015","2014","2013"})
 fars_summarize_years({"2015","2014","2013"})
 fars_map_state("2","2013")
 ```
-
+[![Build Status](https://travis-ci.org/yecong/accdata.svg?branch=master)](https://travis-ci.org/yecong/accdata)

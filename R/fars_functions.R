@@ -60,6 +60,7 @@ make_filename <- function(year) {
 #' corresponding to year in \code{years} do not exist.
 #'
 #' @importFrom dplyr mutate select
+#' @importFrom magrittr %>%
 #'
 #' @examples
 #' \dontrun{fars_read_years({"1996", "2013","2014"})}

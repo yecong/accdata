@@ -4,7 +4,7 @@ Title: State Accidents by Year
 Version: 0.1.0
 Date: 2018-08-25
 Depends: R (>= 3.0.0)
-Imports: readr, dplyr, tidyr, magrittr
+Imports: readr, dplyr, tidyr, magrittr, testthat
 Author: Yidan Cong
 Maintainer: Yidan Cong <congyidan@gmail.com>
 Description: The package contains functions to extract information from 

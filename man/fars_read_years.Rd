@@ -21,6 +21,6 @@ month and year information from data. The function throws a warning if accident 
 a year cannot be found.
 }
 \examples{
-fars_read_years({"1996", "2013","2014"})
+\dontrun{fars_read_years({"1996", "2013","2014"})}
 
 }

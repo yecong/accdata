@@ -19,9 +19,10 @@ This function combines month and year data frames returned by
 
 @importFrom dplyr bind_rows group_by summarize
  @importFrom tidyr spread
+ @importFrom magrittr %>%
 
 @examples
- fars_summarize_years({"2013","2014","2015})
+ \dontrun{fars_summarize_years({"2013","2014","2015})}
 
 @export
 }

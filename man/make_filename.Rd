@@ -18,7 +18,7 @@ This is a simple function that creates a file according to the \code{year} that
 the accidents happened
 }
 \examples{
-make_filename("1996")
-make_filename("2014")
+\dontrun{make_filename("1996")}
+\dontrun{make_filename("2014")}
 
 }

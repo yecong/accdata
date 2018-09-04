@@ -12,8 +12,9 @@
 #' @importFrom readr read_csv
 #' @importFrom dplyr tbl_df
 #'
+#'
 #' @examples
-#' fars_read("accident_2013.csv.bz2")
+#' \dontrun{fars_read("accident_2013.csv.bz2")}
 #'
 #' @export
 fars_read <- function(filename) {
@@ -36,8 +37,8 @@ fars_read <- function(filename) {
 #' according to the year that accidents happened
 #'
 #' @examples
-#' make_filename("1996")
-#' make_filename("2014")
+#' \dontrun{make_filename("1996")}
+#' \dontrun{make_filename("2014")}
 #'
 #' @export
 make_filename <- function(year) {
@@ -61,7 +62,7 @@ make_filename <- function(year) {
 #' @importFrom dplyr mutate select
 #'
 #' @examples
-#' fars_read_years({"1996", "2013","2014"})
+#' \dontrun{fars_read_years({"1996", "2013","2014"})}
 #'
 #' @export
 fars_read_years <- function(years) {
@@ -91,9 +92,10 @@ fars_read_years <- function(years) {
 #'
 #'  @importFrom dplyr bind_rows group_by summarize
 #'  @importFrom tidyr spread
+#'  @importFrom magrittr %>%
 #'
 #'  @examples
-#'  fars_summarize_years({"2013","2014","2015})
+#'  \dontrun{fars_summarize_years({"2013","2014","2015})}
 #'
 #'  @export
 fars_summarize_years <- function(years) {
@@ -123,8 +125,8 @@ fars_summarize_years <- function(years) {
 #' locations defined by longitude and latitude of accidents occurred.
 #'
 #' @examples
-#' fars_map_state("13", "2014")
-#' fars_map_state("0", "2013")
+#' \dontrun{fars_map_state("13", "2014")}
+#' \dontrun{fars_map_state("0", "2013")}
 #'
 #' @importFrom dplyr filter
 #' @importFrom graphics points

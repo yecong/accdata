@@ -19,6 +19,6 @@ cannot be found, the function halts and throws "file does not exist" error
 message.
 }
 \examples{
-fars_read("accident_2013.csv.bz2")
+\dontrun{fars_read("accident_2013.csv.bz2")}
 
 }

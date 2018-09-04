@@ -27,7 +27,7 @@ If there is no accidents in the state for the given year, the function returns
 NULL with a message "no accidents to plot".
 }
 \examples{
-fars_map_state("13", "2014")
-fars_map_state("0", "2013")
+\dontrun{fars_map_state("13", "2014")}
+\dontrun{fars_map_state("0", "2013")}
 
 }

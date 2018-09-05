@@ -6,23 +6,19 @@
 \usage{
 fars_summarize_years(years)
 }
+\arguments{
+\item{years}{A list of strings of years that can be used to read files}
+}
+\value{
+a new data frame that has the total No. of occurrences of accidents
+ for each year in \code{years}.
+}
 \description{
 This function combines month and year data frames returned by
- \link{fars_read_years} to create a new data frame and summarizes the new
- data frame by No. of occurrences of each year in \code{years}.
+\link{fars_read_years} to create a new data frame and summarizes the new
+data frame by No. of occurrences of each year in \code{years}.
 }
-\details{
-@param years A list of strings of years that can be used to read files
+\examples{
+\dontrun{fars_summarize_years({"1996", "2013","2014"})}
 
-@return a new data frame that has the total No. of occurrences of accidents
-  for each year in \code{years}.
-
-@importFrom dplyr bind_rows group_by summarize
- @importFrom tidyr spread
- @importFrom magrittr %>%
-
-@examples
- \dontrun{fars_summarize_years({"2013","2014","2015})}
-
-@export
 }

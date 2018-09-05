@@ -1,3 +1,6 @@
+globalVariables(c("MONTH","STATE","year","n"))
+
+
 #' Import data from given filename
 #'
 #' This function reads a csv file defined by \code{filename} if the file
@@ -96,7 +99,7 @@ fars_read_years <- function(years) {
 #' @importFrom magrittr %>%
 #'
 #' @examples
-#' \dontrun{fars_summarize_years({"2013","2014","2015})}
+#' \dontrun{fars_summarize_years({"1996", "2013","2014"})}
 #'
 #' @export
 fars_summarize_years <- function(years) {

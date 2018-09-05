@@ -85,22 +85,22 @@ fars_read_years <- function(years) {
 #' Summarize data sets by No. of occurrences in a specific year.
 #'
 #' This function combines month and year data frames returned by
-#'  \link{fars_read_years} to create a new data frame and summarizes the new
-#'  data frame by No. of occurrences of each year in \code{years}.
+#' \link{fars_read_years} to create a new data frame and summarizes the new
+#' data frame by No. of occurrences of each year in \code{years}.
 #'
-#'  @param years A list of strings of years that can be used to read files
+#' @param years A list of strings of years that can be used to read files
 #'
-#'  @return a new data frame that has the total No. of occurrences of accidents
-#'   for each year in \code{years}.
+#' @return a new data frame that has the total No. of occurrences of accidents
+#' for each year in \code{years}.
 #'
-#'  @importFrom dplyr bind_rows group_by summarize
-#'  @importFrom tidyr spread
-#'  @importFrom magrittr %>%
+#' @importFrom dplyr bind_rows group_by summarize
+#' @importFrom tidyr spread
+#' @importFrom magrittr %>%
 #'
-#'  @examples
-#'  \dontrun{fars_summarize_years({"2013","2014","2015})}
+#' @examples
+#' \dontrun{fars_summarize_years({"2013","2014","2015})}
 #'
-#'  @export
+#' @export
 fars_summarize_years <- function(years) {
   dat_list <- fars_read_years(years)
   dplyr::bind_rows(dat_list) %>%

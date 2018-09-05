@@ -91,7 +91,7 @@ fars_read_years <- function(years) {
 #' @param years A list of strings of years that can be used to read files
 #'
 #' @return a new data frame that has the total No. of occurrences of accidents
-#' for each year in \code{years}.
+#'  for each year in \code{years}.
 #'
 #' @importFrom dplyr bind_rows group_by summarize
 #' @importFrom tidyr spread

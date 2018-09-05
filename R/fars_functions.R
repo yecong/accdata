@@ -1,5 +1,3 @@
-globalVariables(c("STATE","MONTH","year","n"))
-
 #' Import data from given filename
 #'
 #' This function reads a csv file defined by \code{filename} if the file
@@ -133,7 +131,6 @@ fars_summarize_years <- function(years) {
 #'
 #' @importFrom dplyr filter
 #' @importFrom graphics points
-#' @importFrom maps map
 #'
 #' @export
 fars_map_state <- function(state.num, year) {
